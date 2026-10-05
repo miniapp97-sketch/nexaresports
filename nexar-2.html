@@ -1,0 +1,195 @@
+<!DOCTYPE html><html lang="uz"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>NEXAR ESPORTS</title>
+<style>
+:root{--bg:#0a0a0b;--c:#1c1c20;--c2:#2b2b32;--t:#fff;--m:#8b8b95;--a:#c0262d;--a2:#e23b43;--gold:#f5b301;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme=light]{--bg:#f3f3f5;--c:#fff;--c2:#e3e3e8;--t:#111;--m:#6b6b75}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;min-height:100%;background:var(--bg) radial-gradient(600px 300px at 85% -40px,rgba(192,38,45,.25),transparent) no-repeat;color:var(--t);font-family:Inter,system-ui,sans-serif;font-size:14px;line-height:1.4}
+main{padding:10px 14px 100px;max-width:560px;margin:auto}
+button,input{font-family:inherit}
+.hd{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.lg{width:40px;height:40px;border-radius:12px;background:linear-gradient(145deg,var(--a2),var(--a));display:grid;place-items:center;font:800 20px Impact,sans-serif;color:#fff;box-shadow:0 6px 20px rgba(192,38,45,.4)}
+.hi{flex:1;min-width:0}.hi b{display:block;letter-spacing:.25em;font-size:16px}.hi small{color:var(--m)}
+.ib{width:38px;height:38px;border-radius:50%;border:1px solid var(--c2);background:var(--c);color:var(--t);font-size:15px}
+h1{font-size:24px;margin:8px 0 2px}h2{margin:0}.sub{color:var(--m);margin:0 0 16px}
+.cd{display:flex;align-items:center;gap:14px;background:var(--c);border:1px solid var(--c2);border-radius:18px;padding:12px;margin-bottom:10px;cursor:pointer}
+.cd h3{margin:0;font-size:14px;text-transform:uppercase}.cd small{color:var(--m)}.cd>div{flex:1}
+.ic{width:42px;height:42px;border-radius:13px;flex:none;background:rgba(192,38,45,.18);border:1px solid rgba(192,38,45,.5);display:grid;place-items:center;font-size:24px}
+.gr{display:grid;grid-template-columns:1fr 1fr;gap:12px}.gr .cd{flex-direction:column;text-align:center;margin:0;padding:16px 8px}
+.gr .cd:last-child:nth-child(odd){grid-column:span 2}
+.bt{display:block;width:100%;border:1px solid var(--c2);background:var(--c);color:var(--t);border-radius:14px;padding:11px;font-weight:700;font-size:12px;margin-top:10px;text-transform:uppercase;letter-spacing:.05em}
+.pr{background:linear-gradient(145deg,var(--a2),var(--a));border:0;color:#fff}.bt:disabled{opacity:.4}
+.nav{position:fixed;left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom,0px));max-width:536px;margin:auto;display:flex;background:var(--c);border:1px solid var(--c2);border-radius:30px;padding:5px;gap:4px;z-index:5}
+.nav button{flex:1;background:0;border:0;color:var(--m);padding:6px 4px;border-radius:22px;font-weight:700;font-size:10px;letter-spacing:.08em}
+.nav button.on{background:linear-gradient(145deg,var(--a2),var(--a));color:#fff}.nav span{display:block;font-size:18px}
+.bk{background:0;border:0;color:var(--t);font-size:26px;padding:0;margin:-6px 0 4px}
+.ch{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}.ch span{background:var(--c);border:1px solid var(--c2);border-radius:12px;padding:6px 10px;font-size:13px}
+.sg{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px}
+.st{aspect-ratio:1;border-radius:16px;border:1px solid var(--c2);background:var(--c);color:var(--t);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:15px;font-weight:700}
+.st i{font-style:normal;font-size:11px}.st.bz{opacity:.65}.st.vp{border-color:var(--gold);box-shadow:inset 0 0 14px rgba(245,179,1,.25)}.st.sel{outline:3px solid var(--a2)}
+.li{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid var(--c2)}
+.pf{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.av{position:relative;width:54px;height:54px;border-radius:50%;background:linear-gradient(145deg,var(--a2),var(--a));display:grid;place-items:center;font-size:28px;font-weight:800;color:#fff;overflow:hidden;flex:none}
+.av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.bal{background:linear-gradient(145deg,var(--a),#7a1a1f);color:#fff;border-radius:20px;padding:14px;margin-bottom:10px}.bal b{display:block;font-size:26px}
+.sw{display:flex;gap:8px}.sw .bt{margin:0}.on2{outline:2px solid var(--a2)}
+#md{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:9;padding:16px}#md.on{display:flex}
+.bx{background:var(--c);border-radius:24px;padding:20px;width:100%;max-width:420px;max-height:85vh;overflow:auto}
+label{display:block;color:var(--m);font-size:12px;margin:10px 0}
+input{width:100%;padding:12px;border-radius:12px;border:1px solid var(--c2);background:var(--bg);color:var(--t);font-size:15px;margin-top:4px}
+.rw{display:flex;gap:10px}#ts{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(96px + env(safe-area-inset-bottom,0px));background:var(--t);color:var(--bg);padding:10px 16px;border-radius:14px;font-weight:600;z-index:10;display:none;max-width:86%}
+.i{width:1.15em;height:1.15em;vertical-align:-.2em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ic .i{width:20px;height:20px;stroke:var(--a2)}.nav .i{width:20px;height:20px}.ch .i{width:14px;height:14px}
+.d{display:inline-block;width:8px;height:8px;border-radius:50%}.d.g{background:#2ecc71}.d.r{background:#ff4d4d}
+.q{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:10px}.q div{background:var(--c);border:1px solid var(--c2);border-radius:16px;padding:10px 2px;text-align:center;font-size:11px;font-weight:600;cursor:pointer}.q .i{width:20px;height:20px;stroke:var(--a2);margin-bottom:4px}
+.un{color:var(--a2);font-size:20px}.av{box-shadow:0 0 0 3px var(--bg),0 0 0 5px var(--a)}.bal .i{stroke:#fff}
+</style></head><body>
+<main><div id="app"></div></main>
+<nav class="nav"><button data-a="tab" data-t="t"><span>🏆</span>TURNIR</button><button data-a="tab" data-t="m"><span>🏪</span>MARKETPLACE</button><button data-a="tab" data-t="p"><span>👤</span>PROFIL</button></nav>
+<div id="md"></div><div id="ts"></div>
+<script>
+const AID=7951717415,AUN="mirzhayev",$=s=>document.querySelector(s);
+const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const ls={g(k){try{return localStorage.getItem(k)}catch(e){return null}},s(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const rid=()=>Math.random().toString(36).slice(2,8),today=()=>new Date().toLocaleDateString("uz");
+let cfg=Object.assign({theme:"dark",sound:true,demo:false},JSON.parse(ls.g("nx_cfg")||"{}"));
+const saveCfg=()=>{ls.s("nx_cfg",JSON.stringify(cfg));document.documentElement.dataset.theme=cfg.theme};saveCfg();
+const P={trophy:'<path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/>',store:'<path d="M4 9l1-5h14l1 5M4 9v11h16V9M4 9h16M9 20v-6h6v6"/>',user:'<circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/>',target:'<circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/>',bolt:'<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>',bell:'<path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4zM10 21h4"/>',vol:'<path d="M4 9v6h4l5 4V5L8 9zM17 9a4 4 0 0 1 0 6M19.5 6.5a8 8 0 0 1 0 11"/>',mute:'<path d="M4 9v6h4l5 4V5L8 9zM17 9l5 6M22 9l-5 6"/>',coin:'<circle cx="12" cy="12" r="9"/><path d="M9 9h5a2 2 0 0 1 0 3H9h5a2 2 0 0 1 0 3H9"/>',ticket:'<path d="M3 7v3a2 2 0 0 1 0 4v3h18v-3a2 2 0 0 1 0-4V7z"/><path d="M14 7v10"/>',chart:'<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',medal:'<circle cx="12" cy="9" r="5"/><path d="M8.5 13L7 22l5-3 5 3-1.5-9"/>',history:'<path d="M3 12a9 9 0 1 0 3-6.7L3 8M3 3v5h5M12 7v5l3 2"/>',gear:'<path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/>',headset:'<path d="M4 14v-2a8 8 0 0 1 16 0v2M4 14h3v5H4zM17 14h3v5h-3zM20 19c0 2-3 2-6 2"/>',shield:'<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/>',mega:'<path d="M3 10v4h4l8 5V5l-8 5zM19 9v6"/>',key:'<circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M16 7l3 3"/>',check:'<path d="M5 12l5 5 9-10"/>',game:'<rect x="3" y="8" width="18" height="10" rx="4"/><path d="M8 11v4M6 13h4M16 12h.01M18 14h.01"/>',users:'<circle cx="9" cy="8" r="3"/><path d="M3 20c0-3 3-5 6-5s6 2 6 5M16 5a3 3 0 0 1 0 6M18 15c2 .5 3 2 3 5"/>',crown:'<path d="M3 8l4 4 5-7 5 7 4-4-2 11H5z"/>',clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',star:'<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/>',flag:'<path d="M5 21V4M5 4h13l-3 4 3 4H5"/>',moon:'<path d="M20 14A8 8 0 0 1 10 4a8 8 0 1 0 10 10z"/>',sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/>'};
+const EM={"🏆":"trophy","🏪":"store","👤":"user","🎯":"target","⚡":"bolt","🔔":"bell","🔊":"vol","🔇":"mute","🪙":"coin","💎":"coin","💰":"coin","🎟":"ticket","📊":"chart","🥇":"medal","🏅":"medal","📜":"history","⚙":"gear","🛟":"headset","🛠":"shield","📢":"mega","🔑":"key","✅":"check","🎮":"game","👥":"users","👑":"crown","🕒":"clock","⭐":"star","🎉":"star","🏁":"flag","🟢":"dg","🔴":"dr","🌙":"moon","☀":"sun"};
+const svg=n=>n==="dg"||n==="dr"?`<u class="d ${n[1]}"></u>`:`<svg class="i" viewBox="0 0 24 24">${P[n]||P.trophy}</svg>`;
+const RX=new RegExp("("+Object.keys(EM).join("|")+")\uFE0F?","gu"),RT=new RegExp(RX.source,"u");
+function icons(el){const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),L=[];let n;while(n=w.nextNode())if(RT.test(n.data))L.push(n);
+ L.forEach(n=>{const t=document.createElement("template");t.innerHTML=esc(n.data).replace(RX,(m,e)=>svg(EM[e]));n.replaceWith(t.content)})}
+const BD=[["🏆","Champion"],["⚡","Tezkor"],["🎯","Snayper"],["🏅","MVP"]];
+/* Telegram */
+let T=null,me;
+try{const w=window.Telegram&&Telegram.WebApp;let u=w&&w.initDataUnsafe&&w.initDataUnsafe.user;
+ if(!u){const h=new URLSearchParams(location.hash.slice(1)).get("tgWebAppData");if(h)u=JSON.parse(new URLSearchParams(h).get("user"))}
+ if(u)T={u,w:w&&w.initData?w:null}}catch(e){}
+function initMe(){if(T){const u=T.u;me={id:u.id,name:[u.first_name,u.last_name].filter(Boolean).join(" "),un:u.username||"",photo:u.photo_url||""}}
+ else if(cfg.demo)me={id:AID,name:"Admin (demo)",un:AUN,photo:""};
+ else{let i=+ls.g("nx_lid");if(!i){i=9e6+Math.floor(Math.random()*9e6);ls.s("nx_lid",i)}me={id:i,name:"Mehmon",un:"",photo:""}}}
+initMe();if(T&&T.w){try{T.w.ready();T.w.expand()}catch(e){}}
+const isA=()=>me.id===AID||me.un===AUN;
+function link(u){try{if(T&&T.w)return T.w.openTelegramLink(u)}catch(e){}window.open(u,"_blank")}
+/* Ovoz */
+let ac;function beep(f){if(!cfg.sound)return;try{ac=ac||new(window.AudioContext||webkitAudioContext)();const o=ac.createOscillator(),g=ac.createGain();o.frequency.value=f||520;g.gain.value=.05;o.connect(g);g.connect(ac.destination);o.start();g.gain.exponentialRampToValueAtTime(.0001,ac.currentTime+.12);o.stop(ac.currentTime+.13)}catch(e){}
+ try{T&&T.w&&T.w.HapticFeedback.impactOccurred("light")}catch(e){}}
+/* Ma'lumot */
+const seed=()=>({cats:[{id:"tdm",n:"TDM TURNIR",i:"🎯"},{id:"big",n:"KATTA TURNIR",i:"🏆"},{id:"show",n:"SHOU KATCH",i:"⚡"}],tours:[],market:{uc:[],acc:[],rent:[]},users:{},promos:[],news:""});
+let S=seed(),doc=null;
+function U(id){id=id||me.id;return S.users[id]||(S.users[id]={n:"",un:"",uc:0,h:[]})}
+async function load(){
+ try{const db=window.claude&&await claude.use("db");if(db){doc=db.doc("app/state");const s=await doc.get();if(s.exists)S=Object.assign(seed(),JSON.parse(s.data().j));
+  doc.onSnapshot(s=>{if(s.exists&&!s.metadata.hasPendingWrites){try{S=Object.assign(seed(),JSON.parse(s.data().j));render()}catch(e){}}})}}catch(e){doc=null}
+ if(!doc){try{S=Object.assign(seed(),JSON.parse(ls.g("nx_S")||"{}"))}catch(e){}}
+ const u=U();u.n=me.name;u.un=me.un;render()}
+function save(){if(doc)doc.set({j:JSON.stringify(S)}).catch(()=>toast("Saqlab bo'lmadi"));else ls.s("nx_S",JSON.stringify(S))}
+function toast(m){const t=$("#ts");t.textContent=m;t.style.display="block";clearTimeout(t._t);t._t=setTimeout(()=>t.style.display="none",2200)}
+/* Modal */
+function box(h){const m=$("#md");m._cb=null;m.innerHTML=`<div class="bx">${h}<button class="bt" data-a="x">Yopish</button></div>`;m.classList.add("on")}
+function form(title,fs,cb){const m=$("#md");m.innerHTML=`<div class="bx"><h3>${esc(title)}</h3>${fs.map(f=>`<label>${esc(f.l)}<input id="f_${f.k}" type="${f.t||"text"}" value="${esc(f.v==null?"":f.v)}"></label>`).join("")}<div class="rw"><button class="bt" data-a="x">Bekor</button><button class="bt pr" data-a="ok">OK</button></div></div>`;m.classList.add("on");
+ m._cb=()=>{const o={};fs.forEach(f=>o[f.k]=$("#f_"+f.k).value.trim());cb(o)}}
+/* Navigatsiya */
+const nav=[];let V={tab:"t",v:""},sel=null;
+function go(o){nav.push(V);V=Object.assign({tab:V.tab},o);sel=null;render();window.scrollTo(0,0)}
+const cur=()=>S.tours.find(t=>t.id===V.id);
+const head=()=>`<div class="hd"><div class="lg">N</div><div class="hi"><b>NEXAR</b><small>${me.un?"@"+esc(me.un):esc(me.name)} · ${isA()?"ADMIN":"PLAYER"}</small></div><button class="ib" data-a="bell">🔔</button><button class="ib" data-a="snd">${cfg.sound?"🔊":"🔇"}</button></div>${nav.length?`<button class="bk" data-a="back">←</button>`:""}`;
+function render(){$("#app").innerHTML=head()+({t:tabT,m:tabM,p:tabP}[V.tab])();document.querySelectorAll(".nav button").forEach(b=>b.classList.toggle("on",b.dataset.t===V.tab))}
+const ttl=(a,b)=>`<h1>${a}</h1><p class="sub">${b||""}</p>`;
+/* TURNIR */
+const tcard=t=>`<div class="cd" data-a="tour" data-id="${t.id}"><span class="ic">${t.st==="done"?"✅":"🎮"}</span><div><h3>${esc(t.n)}</h3><small>${esc(t.time)} · 🏅 ${t.prize} UC · ${Object.keys(t.pl).length}/${t.seats+t.vipN}</small></div>›</div>`;
+function myV(){const l=S.tours.filter(t=>Object.values(t.pl).some(p=>p.uid===me.id));return ttl("Mening turnirlarim")+(l.map(tcard).join("")||`<p class="sub">Hali turnirga yozilmagansiz</p>`)}
+function tabT(){
+ if(V.v==="cat"){const c=S.cats.find(c=>c.id===V.id)||{n:""};return ttl(esc(c.n),"Turnirni tanlang")+(S.tours.filter(t=>t.cat===V.id).map(tcard).join("")||`<p class="sub">Hozircha turnir yo'q</p>`)+(isA()?`<button class="bt pr" data-a="addT">+ Turnir qo'shish</button><button class="bt" data-a="delC">Bo'limni o'chirish</button>`:"")}
+ if(V.v==="tour")return tourV(cur());
+ if(V.v==="my")return myV();
+ return ttl("Turnirlar","Bo'limni tanlang")+S.cats.map(c=>`<div class="cd" data-a="cat" data-id="${c.id}"><span class="ic">${esc(c.i)}</span><div><h3>${esc(c.n)}</h3><small>${S.tours.filter(t=>t.cat===c.id).length} ta turnir</small></div>›</div>`).join("")+`<button class="bt" data-a="my">Mening turnirlarim</button>`+(isA()?`<button class="bt pr" data-a="addC">+ Bo'lim qo'shish</button>`:"")}
+function tourV(t){
+ if(!t)return"<p>Topilmadi</p>";
+ const ks=Object.keys(t.pl),mine=ks.find(k=>t.pl[k].uid===me.id),open=t.st==="open";
+ const seat=(k,vip)=>{const p=t.pl[k];return `<button class="st ${p?"bz":""} ${vip?"vp":""} ${sel===k?"sel":""}" data-a="seat" data-k="${k}">${k}<i>${p?"🔴":"🟢"}</i></button>`};
+ let g="",vg="";for(let i=1;i<=t.seats;i++)g+=seat(String(i));for(let i=1;i<=t.vipN;i++)vg+=seat("V"+i,1);
+ let h=ttl(esc(t.n),t.st==="done"?"Turnir tugagan":"Joyingizni tanlang")+`<div class="ch"><span>🏅 ${t.prize} UC</span><span>💰 Kirish: ${t.fee?t.fee+" so'm":"bepul"}</span><span>🕒 ${esc(t.time)}</span><span>👥 ${ks.length}/${t.seats+t.vipN}</span></div>`;
+ if(t.st==="done"){const r=[...t.res].sort((a,b)=>b.pts-a.pts||b.kills-a.kills);
+  return h+(r.map((x,i)=>`<div class="li"><span>${i+1}. <b>${esc(x.nick)}</b></span><span>🎯${x.kills} · ⭐${x.pts}${x.uc?` · 💎${x.uc}`:""}</span></div>`).join("")||`<p class="sub">Qatnashchi yo'q edi</p>`)+(isA()?`<button class="bt" data-a="delT">Turnirni o'chirish</button>`:"")}
+ h+=`<div class="sg">${g}</div>`;
+ if(t.vipN)h+=`<p class="sub">👑 VIP joylar${t.vipP?" — "+t.vipP+" so'm (to'lov admin orqali)":""}</p><div class="sg">${vg}</div>`;
+ h+=`<p class="sub">🟢 bo'sh · 🔴 band</p>`;
+ if(mine)h+=`<div class="bal"><small>Sizning joyingiz</small><b>#${mine}</b></div><button class="bt" data-a="leave">Joyni bekor qilish</button>`;
+ else if(sel)h+=`<div class="cd" style="display:block;cursor:default"><b>Tanlangan joy: #${sel}</b><label>O'yin nickingiz<input id="nick" maxlength="24" value="${esc(U().nk||"")}"></label><button class="bt pr" data-a="join">Joyni band qilish</button></div>`;
+ if(isA())h+=`<button class="bt pr" data-a="fin">🏁 Turnirni tugatish / natija</button><button class="bt" data-a="delT">Turnirni o'chirish</button>`;
+ return h}
+/* MARKETPLACE */
+const MK=[["uc","UC SERVICE","🪙"],["acc","AKKAUNT SAVDO","👤"],["rent","AKKAUNT ARENDA","🔑"]];
+function tabM(){
+ if(V.v==="sec"){const s=MK.find(x=>x[0]===V.id),L=S.market[V.id];
+  return ttl(s[1],L.length+" ta e'lon")+(L.map(i=>`<div class="cd" style="display:block;cursor:default"><h3>${esc(i.t)}${i.s?" · SOTILDI":""}</h3><p class="sub" style="margin:6px 0">${esc(i.d)}</p><b style="color:var(--a2);font-size:18px">${esc(i.p)}</b><button class="bt pr" data-a="buy" data-id="${i.id}" ${i.s?"disabled":""}>${V.id==="rent"?"Arendaga olish":"Sotib olish"}</button>${isA()?`<div class="rw"><button class="bt" data-a="sold" data-id="${i.id}">Sotildi</button><button class="bt" data-a="delI" data-id="${i.id}">O'chirish</button></div>`:""}</div>`).join("")||`<p class="sub">Hech nima yo'q</p>`)+(isA()?`<button class="bt pr" data-a="addI">+ Qo'shish</button>`:"")}
+ return ttl("Marketplace","Bo'limni tanlang")+`<div class="gr">`+MK.map(s=>`<div class="cd" data-a="sec" data-id="${s[0]}"><span class="ic">${s[2]}</span><div><h3>${s[1]}</h3><small>${S.market[s[0]].length?S.market[s[0]].length+" ta e'lon":"Hech nima yo'q"}</small></div></div>`).join("")+`</div>`}
+/* PROFIL */
+const agg=()=>{const r={};S.tours.forEach(t=>(t.res||[]).forEach(x=>{const a=r[x.uid]||(r[x.uid]={uid:x.uid,nick:x.nick,k:0,p:0,n:0,w:0});a.k+=x.kills;a.p+=x.pts;a.n++}));
+ S.tours.forEach(t=>{if(t.res&&t.res.length){const z=[...t.res].sort((a,b)=>b.pts-a.pts||b.kills-a.kills)[0];r[z.uid].w++}});return Object.values(r)};
+function tabP(){const u=U(),v=V.v;
+ if(v==="uc")return ttl("UC balans")+`<div class="bal"><small>Yutib olingan UC</small><b>${u.uc} UC</b></div><p class="sub">UC savdosi mini appdan tashqarida, admin orqali amalga oshiriladi.</p><button class="bt pr" data-a="cash">UC yechish (admin)</button>`;
+ if(v==="promo")return ttl("Promokod","Kodni kiriting va UC yutib oling")+`<label>Promokod<input id="pc" autocapitalize="characters"></label><button class="bt pr" data-a="redeem">Faollashtirish</button>`+(isA()?`<h3 style="margin-top:22px">Promokodlar</h3>`+S.promos.map(p=>`<div class="li"><span><b>${esc(p.code)}</b> · ${p.uc} UC · ${p.used.length}/${p.max||"∞"}</span><button class="ib" data-a="delP" data-id="${p.code}">✕</button></div>`).join("")+`<button class="bt" data-a="addP">+ Promokod yaratish</button>`:"");
+ if(v==="my")return myV();
+ if(v==="stat"){const a=agg().find(x=>x.uid===me.id)||{k:0,p:0,n:0,w:0};return ttl("Statistika")+`<div class="gr">${[["🎮","Turnirlar",a.n],["🥇","G'alaba",a.w],["🎯","Kill",a.k],["⭐","Ochko",a.p]].map(x=>`<div class="cd"><span class="ic">${x[0]}</span><div><h3>${x[2]}</h3><small>${x[1]}</small></div></div>`).join("")}</div>`}
+ if(v==="top")return ttl("Reyting","Ochko bo'yicha")+(agg().sort((a,b)=>b.p-a.p||b.k-a.k).map((x,i)=>`<div class="li"><span>${i+1}. <b>${esc(x.nick)}</b></span><span>⭐${x.p} · 🎯${x.k}</span></div>`).join("")||`<p class="sub">Hozircha natija yo'q</p>`);
+ if(v==="hist")return ttl("Tarix")+(u.h.map(x=>`<div class="li"><span>${esc(x.t)}<br><small class="sub">${esc(x.d)}</small></span><b>${x.v>0?"+":""}${x.v} UC</b></div>`).join("")||`<p class="sub">Hali amal yo'q</p>`);
+ if(v==="set")return ttl("Sozlamalar")+`<label>Mavzu</label><div class="sw"><button class="bt ${cfg.theme==="dark"?"on2":""}" data-a="theme" data-t="dark">🌙 Qora</button><button class="bt ${cfg.theme==="light"?"on2":""}" data-a="theme" data-t="light">☀️ Oq</button></div><label>Ovoz</label><button class="bt" data-a="snd">${cfg.sound?"🔊 Yoqilgan":"🔇 O'chirilgan"}</button>`+(T?"":`<label>Telegramdan tashqarida sinash</label><button class="bt" data-a="demo">${cfg.demo?"Admin (demo): yoqilgan":"Admin sifatida kirish (demo)"}</button>`)+`<button class="bt" data-a="news">📢 Yangiliklar</button>`;
+ if(v==="adm")return ttl("Admin panel")+`<button class="bt pr" data-a="setNews">📢 E'lon matnini o'zgartirish</button><button class="bt" data-a="giveUC">💎 UC berish / ayirish</button><button class="bt" data-a="giveB">🏆 Nishon berish</button><h3 style="margin-top:22px">Foydalanuvchilar</h3>`+(Object.entries(S.users).map(([id,x])=>`<div class="li"><span>${esc(x.n||"—")} ${x.un?"@"+esc(x.un):""}<br><small class="sub">${id}</small></span><b>${x.uc} UC</b></div>`).join(""));
+ const mt=S.tours.filter(t=>Object.values(t.pl).some(p=>p.uid===me.id)).length;
+ const Q=l=>`<div class="q">`+l.map(x=>`<div data-a="p" data-v="${x[0]}">${x[1]}<br>${x[2]}</div>`).join("")+`</div>`;
+ return `<div class="pf"><div class="av">${esc((me.name||"?")[0])}${me.photo?`<img src="${esc(me.photo)}" onerror="this.remove()">`:""}</div><div style="flex:1;min-width:0"><small class="sub" style="margin:0">Salom,</small><h2 class="un">${me.un?"@"+esc(me.un):esc(me.name)}</h2><small class="sub">Telegram ID: ${me.id}</small></div><button class="ib" data-a="p" data-v="help">🛟</button></div>`
+ +`<div class="bal"><div style="text-align:right"><small>•••• ${String(me.id).slice(-5)}</small></div><div class="rw" style="justify-content:space-between;align-items:flex-end"><div><small>Joriy balans</small><b>${u.uc} UC</b></div><div style="text-align:right"><small>Turnirlar</small><b style="font-size:20px">${mt}</b></div></div></div>`
+ +Q([["uc","💎","UC yechish"],["promo","🎟","Promokod"],["hist","📜","Tarix"],["set","⚙️","Sozlamalar"]])
+ +Q([["my","🏆","Turnirlarim"],["stat","📊","Statistika"],["top","🥇","Reyting"],[isA()?"adm":"news",isA()?"🛠":"📢",isA()?"Admin":"Yangilik"]])
+ +`<div class="cd" style="display:block;cursor:default"><h3>PUBG akkaunt</h3><p class="sub" style="margin:6px 0">NIKNEYM: ${esc(u.nk||"—")} · PUBG ID: ${esc(u.pid||"—")}</p><button class="bt" data-a="editPf">Profilni tahrirlash</button></div>`
+ +`<div class="cd" style="display:block;cursor:default"><h3>Nishon</h3><p class="sub" style="margin:6px 0">Nishonlarni admin beradi.</p><div class="gr">${BD.map((b,i)=>`<div class="cd" style="margin:0;${(u.b||[]).includes(i)?"":"opacity:.35"}"><span class="ic">${b[0]}</span><div><h3>${b[1]}</h3></div></div>`).join("")}</div></div>`}
+/* Amallar */
+const A={
+ x(){$("#md").classList.remove("on")},ok(){const m=$("#md");m._cb&&m._cb();m.classList.remove("on")},
+ tab(d){nav.length=0;V={tab:d.t,v:""};sel=null;render()},
+ back(){V=nav.pop()||{tab:V.tab,v:""};sel=null;render()},
+ bell(){box(`<h3>📢 Yangiliklar</h3><p>${esc(S.news||"Hozircha yangilik yo'q")}</p>`)},
+ snd(){cfg.sound=!cfg.sound;saveCfg();render();beep()},
+ theme(d){cfg.theme=d.t;saveCfg();render()},
+ demo(){cfg.demo=!cfg.demo;saveCfg();initMe();render()},
+ news(){A.bell()},
+ cat(d){go({v:"cat",id:d.id})},tour(d){go({v:"tour",id:d.id})},my(){go({v:"my"})},
+ sec(d){go({v:"sec",id:d.id})},p(d){d.v==="help"?link("https://t.me/"+AUN):d.v==="news"?A.bell():go({tab:"p",v:d.v})},
+ editPf(){const u=U();form("PUBG akkaunt",[{k:"nk",l:"Nikneym",v:u.nk},{k:"pid",l:"PUBG ID",v:u.pid}],o=>{u.nk=o.nk;u.pid=o.pid;save();render()})},
+ giveB(){form("Nishon berish",[{k:"id",l:"Telegram ID"},{k:"n",l:"Nishon raqami (1 Champion, 2 Tezkor, 3 Snayper, 4 MVP)",t:"number"}],o=>{const i=(+o.n)-1;if(!o.id||!BD[i])return;const u=U(o.id);u.b=u.b||[];const j=u.b.indexOf(i);j<0?u.b.push(i):u.b.splice(j,1);save();render()})},
+ addC(){form("Yangi bo'lim",[{k:"n",l:"Nomi"}],o=>{if(!o.n)return;S.cats.push({id:rid(),n:o.n.toUpperCase(),i:"🏆"});save();render()})},
+ delC(){form("Bo'lim va uning turnirlari o'chirilsinmi?",[],()=>{S.cats=S.cats.filter(c=>c.id!==V.id);S.tours=S.tours.filter(t=>t.cat!==V.id);save();A.back();A.back()})},
+ addT(){form("Yangi turnir",[{k:"n",l:"Nomi"},{k:"time",l:"Vaqti (masalan 20:00)"},{k:"prize",l:"Mukofot (UC)",t:"number",v:0},{k:"fee",l:"Kirish narxi (so'm, 0 = bepul)",t:"number",v:0},{k:"seats",l:"Oddiy joylar soni",t:"number",v:12},{k:"vipN",l:"VIP joylar soni (0 = VIP yo'q)",t:"number",v:0},{k:"vipP",l:"VIP narxi (so'm)",t:"number",v:0}],o=>{if(!o.n)return;
+  S.tours.push({id:rid(),cat:V.id,n:o.n,time:o.time||"-",prize:+o.prize||0,fee:+o.fee||0,seats:Math.min(100,Math.max(1,+o.seats||12)),vipN:Math.min(40,Math.max(0,+o.vipN||0)),vipP:+o.vipP||0,pl:{},st:"open",res:[]});save();render()})},
+ delT(){form("Turnir o'chirilsinmi?",[],()=>{S.tours=S.tours.filter(t=>t.id!==V.id);save();A.back()})},
+ seat(d){const t=cur(),k=d.k,p=t.pl[k];if(t.st!=="open")return;
+  if(p){if(isA())form(`#${k} (${p.nick}) joyini bo'shatish?`,[],()=>{delete t.pl[k];save();render()});else toast("Band: "+p.nick);return}
+  if(Object.values(t.pl).some(x=>x.uid===me.id))return toast("Siz allaqachon joy olgansiz");
+  sel=k;render()},
+ join(){const t=cur(),n=($("#nick").value||"").trim();if(!n)return toast("Nickni kiriting");if(t.pl[sel])return toast("Joy band bo'ldi");
+  t.pl[sel]={uid:me.id,name:me.name,un:me.un,nick:n};sel=null;save();beep(880);toast("Joy band qilindi ✅");render()},
+ leave(){const t=cur(),k=Object.keys(t.pl).find(k=>t.pl[k].uid===me.id);delete t.pl[k];save();render()},
+ fin(){const t=cur(),ks=Object.keys(t.pl),fs=[];
+  ks.forEach(k=>fs.push({k:"k"+k,l:`#${k} ${t.pl[k].nick} — kill`,t:"number",v:0},{k:"p"+k,l:`#${k} — ochko`,t:"number",v:0},{k:"u"+k,l:`#${k} — yutuq UC`,t:"number",v:0}));
+  form("Natijalarni kiriting",fs,o=>{t.res=ks.map(k=>({k,uid:t.pl[k].uid,nick:t.pl[k].nick,kills:+o["k"+k]||0,pts:+o["p"+k]||0,uc:+o["u"+k]||0}));
+   t.res.forEach(r=>{if(r.uc>0){const u=U(r.uid);u.uc+=r.uc;u.h.unshift({d:today(),t:"Turnir: "+t.n,v:r.uc})}});t.st="done";save();beep(880);render()})},
+ addI(){form("Yangi e'lon",[{k:"t",l:"Nomi"},{k:"p",l:"Narxi"},{k:"d",l:"Tavsif"}],o=>{if(!o.t)return;S.market[V.id].push({id:rid(),t:o.t,p:o.p,d:o.d,s:0});save();render()})},
+ delI(d){S.market[V.id]=S.market[V.id].filter(i=>i.id!==d.id);save();render()},
+ sold(d){const i=S.market[V.id].find(i=>i.id===d.id);i.s=i.s?0:1;save();render()},
+ buy(d){const i=S.market[V.id].find(i=>i.id===d.id);link(`https://t.me/${AUN}?text=`+encodeURIComponent(`Salom! "${i.t}" (${i.p}) kerak. ID: ${me.id}`))},
+ cash(){link(`https://t.me/${AUN}?text=`+encodeURIComponent(`Salom! UC yechmoqchiman. ID: ${me.id}, balans: ${U().uc} UC`))},
+ redeem(){const c=($("#pc").value||"").trim().toUpperCase(),p=S.promos.find(p=>p.code===c);
+  if(!p)return toast("Promokod topilmadi");if(p.used.includes(me.id))return toast("Allaqachon ishlatgansiz");if(p.max&&p.used.length>=p.max)return toast("Promokod tugagan");
+  p.used.push(me.id);const u=U();u.uc+=p.uc;u.h.unshift({d:today(),t:"Promokod "+c,v:p.uc});save();beep(880);toast(`+${p.uc} UC 🎉`);render()},
+ addP(){form("Yangi promokod",[{k:"c",l:"Kod"},{k:"uc",l:"UC miqdori",t:"number",v:60},{k:"max",l:"Necha kishi (0 = cheksiz)",t:"number",v:0}],o=>{if(!o.c)return;S.promos.push({code:o.c.toUpperCase(),uc:+o.uc||0,max:+o.max||0,used:[]});save();render()})},
+ delP(d){S.promos=S.promos.filter(p=>p.code!==d.id);save();render()},
+ setNews(){form("E'lon",[{k:"n",l:"Matn",v:S.news}],o=>{S.news=o.n;save();toast("Saqlandi")})},
+ giveUC(){form("UC berish",[{k:"id",l:"Telegram ID"},{k:"v",l:"UC (minus = ayirish)",t:"number"}],o=>{const v=+o.v;if(!o.id||!v)return;const u=U(o.id);u.uc=Math.max(0,u.uc+v);u.h.unshift({d:today(),t:"Admin",v});save();render()})}
+};
+document.addEventListener("click",e=>{const b=e.target.closest("[data-a]");if(!b||b.disabled)return;const f=A[b.dataset.a];if(f){beep();f(b.dataset)}});
+["#app","#md","#ts"].forEach(q=>new MutationObserver(()=>icons($(q))).observe($(q),{childList:true,subtree:true}));icons($(".nav"));
+render();load();
+</script></body></html>
